@@ -1,0 +1,29 @@
+See https://www.html5rocks.com/en/tutorials/webaudio/intro/ for good overview
+
+Stereo Mixer
+
+
+Channel
+-------
+Input Gain - https://developer.mozilla.org/en-US/docs/Web/API/GainNode
+Compression - https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode
+Eq [Hi, Mid, Lo] - https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode
+FX / Aux send / return - TBC
+Pan - https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode
+Output gain - https://developer.mozilla.org/en-US/docs/Web/API/GainNode
+
+Features / Mute, Solo
+
+
+Routing Channel to Master
+-------------------------
+https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode
+
+
+Master
+------
+FX
+L / R Gain
+
+Features / Mute / Send to speakers / file / show monitor etc
+
