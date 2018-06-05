@@ -5,5 +5,48 @@
 </head>
 <body>
     <script src="sine.js"></script>
+	<style>
+		label {
+		width: 100px;
+		display: inline-block;		
+		}
+	</style>
+	<div id="channel1">
+		<label>Gain <input type="range" min="0" max="1" value="0.5" id="c1-gain" step="0.01" list="tickmarks"></label><br>
+		<label>Comp <input type="range" min="0" max="1" value="0.0" id="c1-comp" step="0.01" list="tickmarks"></label><br>
+		<label>EQ-H <input type="range" min="0" max="1" value="0.5" id="c1-eq-hi" step="0.01" list="tickmarks"></label><br>
+		<label>EQ-M<input type="range" min="0" max="1" value="0.5" id="c1-eq-mid" step="0.01" list="tickmarks"></label><br>
+		<label>EQ-L<input type="range" min="0" max="1" value="0.5" id="c1-eq-low" step="0.01" list="tickmarks"></label><br>
+		<label>FX<input type="range" min="0" max="1" value="0.0" id="c1-fx" step="0.01" list="tickmarks"></label><br>
+		<label>Pan<input type="range" min="-1" max="1" value="0.0" id="c1-pan" step="0.02" list="tickmarks-pan"></label><br>
+		<label>Fader<input type="range" min="0" max="1" value="0.5" id="c1-fade" step="0.01" list="tickmarks"></label><br>
+	</div>
+	<datalist id="tickmarks">
+		<option value="0.00" label="0%">
+		<option value="0.10">
+		<option value="0.20">
+		<option value="0.30">
+		<option value="0.40">
+		<option value="0.50" label="50%">
+		<option value="0.60">
+		<option value="0.70">
+		<option value="0.80">
+		<option value="0.90">
+		<option value="1.00" label="100%">
+	</datalist>
+	<datalist id="tickmarks-pan">
+		<option value="-1.00" label="L">
+		<option value="-0.8">
+		<option value="-0.6">
+		<option value="-0.4">
+		<option value="-0.2">
+		<option value="0.0" label="C">
+		<option value="0.2">
+		<option value="0.4">
+		<option value="0.6">
+		<option value="0.8">
+		<option value="1.0" label="R">
+	</datalist>
+	
 </body>
 </html>
