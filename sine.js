@@ -1,4 +1,3 @@
-
 document.getElementById('play').onclick=()=>{
   const context = new (window.AudioContext || window.webkitAudioContext)();
   const osc = context.createOscillator();
