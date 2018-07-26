@@ -27,3 +27,16 @@ L / R Gain
 
 Features / Mute / Send to speakers / file / show monitor etc
 
+Need to create a graph to connect channels etc and be able to solo / mute plus bypass
+
+A control represents an audio node such as gain etc.
+control.bypass()
+control.enable()
+
+A channel represents a number of connected controls handling a stereo input on the mixer (a connected audio graph) and allows each control to be accessed and connected
+channel.mute()
+
+A mixer represents the mixing console with its channels routed through the output controls
+mixer.solo(channel)
+mixer.endSolo
+mixer.mute()
